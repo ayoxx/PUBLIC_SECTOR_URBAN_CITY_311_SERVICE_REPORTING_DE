@@ -6,6 +6,8 @@ charset-normalizer==3.4.7
 cryptography==49.0.0
 idna==3.18
 isodate==0.7.2
+polars==1.41.2
+polars-runtime-32==1.41.2
 pycparser==3.0
 python-dotenv==1.2.2
 requests==2.34.2
