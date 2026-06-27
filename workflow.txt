@@ -1,1 +1,43 @@
 pip install azure-storage-blob python-dotenv
+use this link to install astronomer for Airflow. : https://www.astronomer.io/docs/astro/cli/install-cli
+make sure i have docker already running to use airflow
+use this to initiate airflow: astro dev init
+use this to start airflow: astro dev start
+delete test and plugin folder
+add .astro, airflow_settings.yml to gitignore
+add .env to dockerignore
+Apache airflow is an open source workflow management platform used foer building, scheduling, and monitoring data pipelines
+Airflow is an orchestration and automation tool
+NB: A dag is a collection of tasks
+I NEED TO MOVE MY SCRIPTS TO INCLUDE FOLDER SO AIRFLOW CAN AUTOMATE THE SCRIPTS IN THAT FOLDER
+NB: When i run astro dev start, always make sure my requirement.txt only has the major dependencies only
+https://airflow.apache.org/docs/apache-airflow-providers-microsoft-azure/stable/operators/index.html
+Terraform is an infastructure as code. azure biceb, aws cloud formation, google deployment manager
+IAC is the practice of manageing and provisoning computing infractstructure using code
+Terrform is written in HashiCorp Configuration Language (HCL)
+Terraform also uses a declarative Language
+To use terraform I need to create a provider. eg azure or gcp or aws provider etc
+A declarative language focuses on the desired result.
+Components of Terraform - Providers Block, Resource Block, Variable Block.
+Always serch google or terraform documentation for provider and resource information etc
+Any resources created on terraform return an attributes and I can view this using Output Block
+The state file needs to be treated like a secrets and needs to be added to .gitignore
+And this state file can be saved in cloud storage account for collaborative projects where other users also needs access to.
+TERRAFORM WORKFLOW - terraform init > prepares the project,
+terraform plan > preview changes, 
+terraform apply > provison infractstures, 
+terraform destroy > removes all infrastructures managed by terraform
+always use init only when you are adding a new provider
+There are other secondary commands tho
+When i create my provider, I must write another logic to authenticate my provider
+Then i need to run "az login" on my terminal to login
+Authenticating means loggin into my provider account
+after authenticating then I will need to Initiallize using init 
+NB: Terraform uses double quote and not single quote
+Every terraform resources always have an Arguments and Attributes
+arguments are what we are passing into a resource like name, region types etc
+attributes are what are exposed after creating an argumensts like access key, id, account key, url etc
+Airflow only uses credntials.sh instead of .envuse this to activate source credentials.sh
+
+
+
