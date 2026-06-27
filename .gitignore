@@ -1,4 +1,6 @@
 .env
 venv
 *.csv
+.astro
+airflow_settings.yml
 
