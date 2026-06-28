@@ -12,6 +12,7 @@ NB: A dag is a collection of tasks
 I NEED TO MOVE MY SCRIPTS TO INCLUDE FOLDER SO AIRFLOW CAN AUTOMATE THE SCRIPTS IN THAT FOLDER
 NB: When i run astro dev start, always make sure my requirement.txt only has the major dependencies only
 https://airflow.apache.org/docs/apache-airflow-providers-microsoft-azure/stable/operators/index.html
+Airflow libraries are what are called PROVIDERS. And i can find them in requirements.txt files
 Terraform is an infastructure as code. azure biceb, aws cloud formation, google deployment manager
 IAC is the practice of manageing and provisoning computing infractstructure using code
 Terrform is written in HashiCorp Configuration Language (HCL)

@@ -44,4 +44,4 @@ def upload_data():
     return None
 
 
-upload_data()
+#upload_data()          ## I had to comment this out because it was causing the DAG to fail when i moved the file to include.
