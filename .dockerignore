@@ -8,4 +8,10 @@ airflow.db
 airflow.cfg
 credentials.sh
 __pycache__
-
+dag/file.txt
+.terraform
+*.hcl
+credentials.txt
+*.tfstate
+*.backup
+*.tfvars

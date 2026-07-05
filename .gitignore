@@ -4,6 +4,14 @@ venv
 credentials.sh
 __pycache__/
 *.py[cod]
+file.txt
+tests
+.terraform
+*.hcl
+credentials.txt
+*.tfstate
+*.backup
+*.tfvars
 
 
 

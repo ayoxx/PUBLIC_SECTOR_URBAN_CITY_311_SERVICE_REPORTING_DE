@@ -17,9 +17,8 @@ default_args = {
     'start_date': datetime(2026, 6, 27),
     'retries': 1,
     'retry_delay': timedelta(minutes=1),
-    'schedule_interval': '@hourly',
     'azure_data_factory_conn_id': 'azurefactory',
-    'factory_name': 'urban-cities-factory',
+    'factory_name': 'urbancityfactory',
     'resource_group_name': 'service_requests'
 }
 
@@ -37,7 +36,7 @@ def transform_data():
 
 
 with DAG(dag_id='urban_city_requests',
-        catchup=False, default_args=default_args):
+        catchup=False, schedule="@hourly", default_args=default_args):
     
     create_db_table = SQLExecuteQueryOperator(
         sql='sql/urban_city.sql',
@@ -47,7 +46,7 @@ with DAG(dag_id='urban_city_requests',
     
     data_factory = AzureDataFactoryRunPipelineOperator(
         task_id='run_data_factory',
-        pipeline_name='urban_city_factory'
+        pipeline_name='UrbanCityDataFactoryPipeline'
     )
     
     extract_data_from_api() >> transform_data() >> create_db_table >> data_factory
