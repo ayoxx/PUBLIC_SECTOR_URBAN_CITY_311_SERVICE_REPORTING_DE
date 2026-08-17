@@ -12,6 +12,7 @@ credentials.txt
 *.tfstate
 *.backup
 *.tfvars
+workflow.txt
 
 
 
